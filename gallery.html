@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Diane Jasmin's Gallery</title>
+    <style>
+        body {
+            background-color: #B3EBF2; /* pastel blue background */
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: white;
+            padding: 30px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            padding: 20px 20px;
+            border-radius: 5px;
+        }
+
+        nav a.active {
+            background-color: #ed10c8; /* Darker pink for active */
+            color: rgb(19, 14, 14);
+        }
+
+        .main-content {
+            flex-grow: 1; /* Allow main content to take up remaining space */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            width: 80%; /* Adjust width as needed */
+            max-width: 1200px;
+        }
+
+        .main-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 3D effect */
+            letter-spacing: 2px;
+            color: #800080; /* A purple tone for the text */
+            text-align: center;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .gallery-item img {
+            width: 60%;
+            height: auto;
+            display: block;
+            border-radius: 3px;
+        }
+        .animated-image {
+            width: 300px; /* Adjust as needed */
+            height: auto;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Example transitions */
+        }
+
+        .animated-image:hover {
+            transform: scale(1.1); /* Example: scale up on hover */
+            opacity: 0.8; /* Example: slightly transparent on hover */
+        }
+       
+        footer {
+            background-color: white;
+            padding: 10px 0;
+            border-top: 1px solid #ccc;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h1>GALLERY</h1>
+
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://scontent.fmnl17-7.fna.fbcdn.net/v/t1.15752-9/480811687_981475137459497_1447261669302500710_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGz5kXeKmnJlOGbfgmDzkO9NECO5td2JiU0QI7m13YmJc-1yk7KwC8xl9cDiJ2bsV3K0roJToIOX9sbG-cB_fd9&_nc_ohc=e53u6lvHW9wQ7kNvgFimi44&_nc_oc=Adl2ZxBzbNqOklVJ8K72JBmfVuUeQVOU3zDcStqxEeB6nqUGuUsQg04Sl93Irq2YUxw&_nc_zt=23&_nc_ht=scontent.fmnl17-7.fna&oh=03_Q7cD1wF00XnfAkht6SEflzxTiPtPujqjMmulaSH3b68pfi0vUg&oe=6810B4C2" alt="Animated Image" class="animated-image">
+            </div>
+            <div class="gallery-item">
+                <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t1.15752-9/485439638_1854197775356521_342706818271336066_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHiGT_ZtZF-RvCWk74p-F2X9xQOOADbayn3FA44ANtrKXAxGRqIbf3skrHM6B7Dg_9QX2B_g4wtyNzfAISHUu0v&_nc_ohc=uArgPM0Q6aoQ7kNvgFQC5qt&_nc_oc=AdnmKICCJlb1nCp-sDvzbGEFI5SVLMn1fvKjm4qxJKBeGCCauxJixz4GsI-AxGqDdAY&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&oh=03_Q7cD1wEZJSVhSWtPfOaj1mDU2eFa_vcNBxClS66HQuogoKjnqg&oe=6810A5C9" alt="Animated Image" class="animated-image">
+            </div>
+            <div class="gallery-item">
+                <img src="https://scontent.fmnl17-8.fna.fbcdn.net/v/t1.15752-9/486041061_10053208198022460_450210792965111487_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGqZmcndjCBmWr6tPcWkB_YJpX6_CUApLMmlfr8JQCks4kmfVg70e5rg2lPppCj7CSSwamG1qa91mCeJG3yVYJ0&_nc_ohc=gevn8sxigNIQ7kNvgHVtC8g&_nc_oc=Adk_8U6XBnfP-wnVvUR3sBjrrbP-D-G2xrJb34zZxPpgRFrtjUHgvBJJpYll3swdi64&_nc_zt=23&_nc_ht=scontent.fmnl17-8.fna&oh=03_Q7cD1wE_94n3Eono__ukQ6GanuEknaUug6O_5LeErUKVZgUOmA&oe=6810ADBA" alt="Animated Image" class="animated-image">
+            </div>
+            <div class="gallery-item">
+                <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t1.15752-9/482891684_634789829408925_5343555835419971961_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeH0ns9l6ao755xADHiCKO9XYigTVTpdja5iKBNVOl2NrvMCFjBJ4vfZuL-4EDCw7PGoYvI_1xWZo_GalWfBQaSl&_nc_ohc=bgBWMxM29fQQ7kNvgE8VGt4&_nc_oc=AdlyhC9JSYXKZTZuVOdwtmhgpFwXT8BPj4Rzgzs2G3NNnrQ5bzMJ-AZ_K0BUA3zuLKQ&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&oh=03_Q7cD1wF2ikBkMN31YZbv1PCqQtfZgYpf0cD5IHvn1jXAByx0EQ&oe=6810AAE0" alt="Animated Image" class="animated-image">
+            </div>
+            <div class="gallery-item">
+                <img src="https://scontent.fmnl17-4.fna.fbcdn.net/v/t1.15752-9/486625632_1208485330633126_3680049334198327254_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEcas1QGmWI-aOUOK5Mj1IH4PfK6q7ku9vg98rqruS721VvTCBqwKdOY_bboZQL_r7rx6_Gg0pcYE1j33_-tbnW&_nc_ohc=IkA2oZK4IQwQ7kNvgGKyLOW&_nc_oc=Adl246D8gIGkqVqOoIfO7X0FQBEDm_mP6Py1CV9ijKa5zKUGP8vWRpDrd_0K-LIx76s&_nc_zt=23&_nc_ht=scontent.fmnl17-4.fna&oh=03_Q7cD1wH7y3IAJei3YYc_WitstV-2odimSftUYpPtObTQfOYscA&oe=681092A7" alt="Animated Image" class="animated-image">
+            </div>
+            <div class="gallery-item">
+                <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t1.15752-9/486129882_631222933005845_5644043652900008677_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHJaoFuxmeXPI5vGiswej1hKZ7eqVMd85spnt6pUx3zm1-_An_J2XPWi1CbcJlDh4Tn9EKJTPcJXYJ5ZFGmBd4p&_nc_ohc=uPZOXK-d96cQ7kNvgHBDksT&_nc_oc=AdlYgwcG9CAVNTl8FwLz6R_7bz55ZpzzIFhuvOa59_g80dKBPGyZ4vdrKrEj2rgbOJc&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&oh=03_Q7cD1wFJObEUJbkYEpYCB8syKEMi-nCxDCPWzOqLNWlxH2BzgQ&oe=6810B63C" alt="Animated Image" class="animated-image">
+            </div>
+            <div class="gallery-item">
+                <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/485503710_2438672349812964_6677386999835249928_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHdIczUtzKlnzYAFTFlDtli_Jiql7axorn8mKqXtrGiub2UcxUMnycu17e_2MMpwOptneuslvooAp7SPiK_MuKP&_nc_ohc=6-jnPkNiT2kQ7kNvgESP6sN&_nc_oc=Adm0cathfdAo4CDlKeY2h0tKAmK9CK0F_Did5qmAdmBHd01_UkoAn4QCkwv6mWSTsuk&_nc_zt=23&_nc_ht=scontent.fmnl17-1.fna&oh=03_Q7cD1wGdkdZMuvFFua0qVAkjHV6tf7_SIbWG2RT8IRDolIBbMQ&oe=6810B877" alt="Animated Image" class="animated-image">
+            </div>
+            <div class="gallery-item">
+                <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/486152257_1699511127638443_4980328547051174866_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeE9nUKk8X_mKG5_bMm2F-7TvnrGAPDlSnW-esYA8OVKdVywxpbbrL5HU73O4LB9GcJ9otdu3RHl9pgtCOubcoYT&_nc_ohc=AgxV66MoK94Q7kNvgGs1Pg2&_nc_oc=AdmWJsN1ucH7Pw64X8rUMkJYaGpJf57GD8sfEbz9xcVbFV9lbB0GtokuubgrrXn5TT4&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&oh=03_Q7cD1wENUmt5t73Wiecqds7ksjia2vWFGUs5V-VXVZgF4QnnjQ&oe=6810BBF2" alt="Animated Image" class="animated-image">
+            </div>
+            <div class="gallery-item">
+                <img src="https://scontent.fmnl17-7.fna.fbcdn.net/v/t1.15752-9/487073695_516055667999042_9138591451977677353_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFTOhaiJHCvncp-nrgUbX6bYWmR3nSah41haZHedJqHjSKOnX0Iw5SvEDirBUMtQFV9MnnhQEItl5sSCJFcBSRv&_nc_ohc=OrtOza-HlZEQ7kNvgE2Yu8X&_nc_oc=Adkr98LkoI-R8gF9XCeqckeB03Oeaj7xmdyGuqcaNih1JFa6mgoOUPVTNqjg_HVi0Wc&_nc_zt=23&_nc_ht=scontent.fmnl17-7.fna&oh=03_Q7cD1wFT_CFXuN7tz5rjjvQ-4gDcYsSW0BJgQYS-o1lmVFTarA&oe=6810A284" alt="Animated Image" class="animated-image">
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Diane Jasmin's Gallery</p>
+    </footer>
+
+    <script>
+        // You'll need to replace the placeholder image URLs with actual paths to your gallery images.
+        // For example:
+        // document.querySelector('.gallery-item img:nth-child(1)').src = "images/image1.jpg";
+    </script>
+</body>
+</html>

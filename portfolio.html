@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Diane Jasmin's Gallery</title>
+    <style>
+
+        body {
+            background-color: #fceabb; /* Light orange background */
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: white;
+            padding: 30px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            padding: 20px 20px;
+            border-radius: 5px;
+        }
+
+        nav a.active {
+            background-color: #ed10c8; /* Darker pink for active */
+            color: rgb(19, 14, 14);
+        }
+
+        .main-content {
+            flex-grow: 1; /* Allow main content to take up remaining space */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 30px;
+            width: 80%; /* Adjust width as needed */
+            max-width: 1200px;
+            text-align: left;
+        }
+
+        .main-content h1 {
+            font-size: 4em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 3D effect */
+            letter-spacing: 2px;
+            color: #800080; /* A purple tone for the text */
+            text-align: center;
+        }
+
+        .portfolio-form {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-form label {
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        .portfolio-form input,
+        .portfolio-form textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        .portfolio-info {
+            margin-bottom: 20px;
+        }
+        .top-center {
+            text-align: center; /* Center text within the div */
+            padding-top: 5px; 
+            padding-bottom: 10px;
+
+        }
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+            gap: 7px;
+            margin-top: 10px;
+        }
+        .gallery-item img {
+            width: 40%;
+            height: auto;
+            display: block;
+            border-radius: 3px;
+        }
+        .animated-image {
+            width: 300px; /* Adjust as needed */
+            height: auto;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Example transitions */
+        }
+
+        .animated-image:hover {
+            transform: scale(1.1); /* Example: scale up on hover */
+            opacity: 0.8; /* Example: slightly transparent on hover */
+        }
+
+        footer {
+            background-color: white;
+            padding: 10px 0;
+            border-top: 1px solid #ccc;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="active">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="top-center">
+        <div>    
+            <h1>PORTFOLIO</h1>
+            <h2><p>Diane Jasmin B. Broquel</p></h2>
+            <h2><p>Photographer</p></h2>
+            <h3><p>Trainings:</p></h3>
+            <p>Effective Designs for Product Packaging(2022)</p>
+            <p>Creating Effective Marketing Collaterals(2020)</p>
+        </div>
+        <div>
+            <h3><p>Achievement:</p></h3>
+            <p>This is the two of my best work</p>
+            <h4><p>won the<strong> "Best Photography in 2023"</p></strong></h4>
+        </div>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://scontent.fmnl17-8.fna.fbcdn.net/v/t1.15752-9/481886956_1704479877126963_5025342169475142036_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHs8ETVFsqGoeMn5L3ja98YpLsOQWLabgKkuw5BYtpuAsczu3MzeJkyK7EuyWkBMhPdO8yyxhZc9swTODnekV7d&_nc_ohc=q-Ig9r63D4MQ7kNvgF_dU1S&_nc_oc=Adl_-jPzABz9u0TRFvqzC02mqiznvdptYP4CQPUXoUQXkAa2F36i0DKAJox1i74GFVQ&_nc_zt=23&_nc_ht=scontent.fmnl17-8.fna&oh=03_Q7cD1wH0P1P2bgBYDYR8LwxizfSqJeZNXm0pP8QzYBaJmoNHbA&oe=68160D25" class="animated-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fmnl17-7.fna.fbcdn.net/v/t1.15752-9/486579225_671623935248254_2163409923384971108_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGFDZ5gzZL5Tq3a3jThDzf8ajr8yJ2o4BRqOvzInajgFILm8NYwIB0sVsCNFiTLe3EfY1CzFjZZD8Myf5JY-yNY&_nc_ohc=PUGYMDiVRucQ7kNvgHSoNV0&_nc_oc=AdnGWvJ4A2YMAA5vY5IrD54tTfgKfkusMvH3592p-2QZXF8DVc690ACcukrTzaa3XDs&_nc_zt=23&_nc_ht=scontent.fmnl17-7.fna&oh=03_Q7cD1wHgH3XijFz6l7hnFdWvgwclLCKa36Cw0aIjKbPMV94R1Q&oe=6815FD11" class="animated-image">
+                </div>
+        </div>
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Diane Jasmin's Gallery</p>
+    </footer>
+
+    <script>
+        // You'll need to replace the placeholder image URLs with actual paths to your icon files.
+        // For example:
+        // document.querySelector('.logo-badge img').src = "images/logo.png";
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Diane Jasmin's Gallery</title>
+    <style>
+        body {
+            background-color: #B39EB5; /* Pastel purple background */
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: white;
+            padding: 30px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            padding: 20px 20px;
+            border-radius: 5px;
+        }
+
+        nav a.active {
+            background-color: #ed10c8; /* Darker pink for active */
+            color: rgb(19, 14, 14);
+        }
+
+        .main-content {
+            flex-grow: 1; /* Allow main content to take up remaining space */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            width: 80%; /* Adjust width as needed */
+            max-width: 1200px;
+            text-align: left;
+        }
+
+        .main-content h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 3D effect */
+            letter-spacing: 2px;
+            color: #800080; /* A purple tone for the text */
+            text-align: center;
+        }
+
+        .main-content p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .logo-badge img {
+            width: 150px; /* Adjust size as needed */
+            margin-top:20px;
+            float: right;
+        }
+
+        footer {
+            background-color: white;
+            padding: 10px 0;
+            border-top: 1px solid #ccc;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h1>ABOUT</h1>
+        <p>
+            Hi, I'm Diane Jasmin B. Broquel, a student based in Our Lady of Fatima University with
+            a passion for photography. I've been exploring photography for 2 years and am constantly
+            amazed by how a single shot can capture a moment, a feeling, or a story. What started as a
+            hobby has quickly turned into a creative outlet, and I'm always learning and experimenting
+            with new techniques. Right now, I'm focusing on portrait photography, street photography,
+            landscape photography and I'm excited to continue growing and refining my skills in specific
+            technique, editing, or camera gear. Photography has taught me to see the world from new
+            perspectives, and I can't wait to keep exploring what's possible with my camera.
+        </p>
+
+        <p>
+            As a student, I'm always pushing myself to think outside the box and experiment with different
+            styles and subjects. I'm especially drawn to fashion, architecture, nature photography. Along
+            the way, I've also learned the value of patience and practice often finding that the best images
+            come after spending time perfecting both technique and composition. Photography has become
+            more than just a hobby for me—it's a passion that fuels my creativity and inspires me to keep
+            learning and improving.
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Diane Jasmin's Gallery</p>
+    </footer>
+
+    <script>
+        // You'll need to replace the placeholder image URLs with actual paths to your icon files.
+        // For example:
+        // document.querySelector('.logo-badge img').src = "images/logo.png";
+    </script>
+</body>
+</html>

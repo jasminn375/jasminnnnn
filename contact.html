@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Diane Jasmin's Gallery</title>
+    <style>
+        body {
+            background-color: #77DD77; /* pastel green background */
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: white;
+            padding: 30px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            padding: 20px 20px;
+            border-radius: 5px;
+        }
+
+        nav a.active {
+            background-color: #ed10c8; /* Darker pink for active */
+            color: rgb(19, 14, 14);
+        }
+
+        .main-content {
+            flex-grow: 1; /* Allow main content to take up remaining space */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            width: 80%; /* Adjust width as needed */
+            max-width: 1200px;
+            text-align: left;
+        }
+
+        .main-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 3D effect */
+            letter-spacing: 2px;
+            color: #800080; /* A purple tone for the text */
+            text-align: center;
+        }
+
+        .contact-form {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .logo-badge img {
+            width: 150px; /* Adjust size as needed */
+            margin-top:20px;
+            float: right;
+        }
+
+        footer {
+            background-color: white;
+            padding: 10px 0;
+            border-top: 1px solid #ccc;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#" class="active">Contact</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h1>CONTACT</h1>
+
+        <div class="contact-form">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Concern:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> djbroquel@gmail.com</p>
+            <p><strong>Contact:</strong> 09166340793</p>
+            <p><strong>Based in:</strong> Quezon City, Philippines</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Diane Jasmin's Gallery</p>
+    </footer>
+
+    <script>
+        // You'll need to replace the placeholder image URLs with actual paths to your icon files.
+        // For example:
+        // document.querySelector('.logo-badge img').src = "images/logo.png";
+    </script>
+</body>
+</html>
