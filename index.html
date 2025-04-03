@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diane Jasmin's Gallery</title>
+    <style>
+        body {
+            background-color: #fddde6; /* Pastel pink background */
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: white;
+            padding: 30px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            padding: 20px 20px;
+            border-radius: 5px;
+        }
+
+        nav a.active {
+            background-color: #ed10c8; /* Darker pink for active */
+            color: rgb(19, 14, 14);
+        }
+
+        .main-content {
+            flex-grow: 1; /* Allow main content to take up remaining space */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            width: 80%; /* Adjust width as needed */
+            max-width: 1200px;
+            text-align: left;
+        }
+
+        .main-content h1 {
+            font-size: 8em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 3D effect */
+            letter-spacing: 9px;
+            color: #800080; /* A purple tone for the text */
+        }
+
+        .social-icons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        .social-icons img {
+            width: 70px;
+            height: 70px;
+            margin: 16px 0;
+        }
+
+        footer {
+            background-color: white;
+            padding: 10px 0;
+            border-top: 1px solid #ccc;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%; /* Adjust width as needed */
+            max-width: 1200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="content-container">
+            <div>
+                <h1>DIANE<br>JASMIN'S<br>GALLERY</h1>
+            </div>
+            <div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1Bf9zQ1CRx/">
+                        <img src="https://cdn.freebiesupply.com/logos/large/2x/facebook-logo-2019.svg" alt="FACEBOOK">
+                      </a>
+                    <a href="https://www.instagram.com/xo_jasminn.04/">
+                        <img src="https://dreamfoundry.org/wp-content/uploads/2018/12/instagram-logo-png-transparent-background.png" alt="INSTAGRAM">
+                      </a>
+                    <a href="https://www.youtube.com/@dianebroquel2454">
+                        <img src="https://www.freeiconspng.com/thumbs/youtube-logo-png/hd-youtube-logo-png-transparent-background-20.png" alt="YOUTUBE">
+                      </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Diane Jasmin's Gallery</p>
+    </footer>
+
+    <script>
+        // You'll need to replace the placeholder image URLs with actual paths to your icon files.
+        // For example:
+        // document.querySelector('.social-icons img:nth-child(1)').src = "images/facebook.png";
+        // document.querySelector('.logo-badge img').src = "images/logo.png";
+    </script>
+</body>
+</html>
